@@ -10,5 +10,8 @@
 #define frontend_h
 
 #include <stdio.h>
+#include <ncurses.h>
+enum Direction getNextMove(enum Direction previous);
+void displayPoints(List* snake, const chtype symbol);
 
 #endif /* frontend_h */

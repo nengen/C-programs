@@ -7,7 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		E0716DC01FAE67DE00AAD096 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = E0716DBF1FAE67DE00AAD096 /* main.c */; };
+		E0716DC61FAE6CD400AAD096 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = E0716DBF1FAE67DE00AAD096 /* main.c */; };
+		E0716DCF1FB1EFED00AAD096 /* backend.c in Sources */ = {isa = PBXBuildFile; fileRef = E0716DCD1FB1EFED00AAD096 /* backend.c */; };
+		E0716DD21FB1EFF500AAD096 /* frontend.c in Sources */ = {isa = PBXBuildFile; fileRef = E0716DD01FB1EFF500AAD096 /* frontend.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +27,10 @@
 /* Begin PBXFileReference section */
 		E0716DBC1FAE67DE00AAD096 /* SnakeGame */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = SnakeGame; sourceTree = BUILT_PRODUCTS_DIR; };
 		E0716DBF1FAE67DE00AAD096 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		E0716DCD1FB1EFED00AAD096 /* backend.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = backend.c; sourceTree = "<group>"; };
+		E0716DCE1FB1EFED00AAD096 /* backend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = backend.h; sourceTree = "<group>"; };
+		E0716DD01FB1EFF500AAD096 /* frontend.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = frontend.c; sourceTree = "<group>"; };
+		E0716DD11FB1EFF500AAD096 /* frontend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = frontend.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +64,10 @@
 			isa = PBXGroup;
 			children = (
 				E0716DBF1FAE67DE00AAD096 /* main.c */,
+				E0716DCD1FB1EFED00AAD096 /* backend.c */,
+				E0716DCE1FB1EFED00AAD096 /* backend.h */,
+				E0716DD01FB1EFF500AAD096 /* frontend.c */,
+				E0716DD11FB1EFF500AAD096 /* frontend.h */,
 			);
 			path = SnakeGame;
 			sourceTree = "<group>";
@@ -119,7 +129,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E0716DC01FAE67DE00AAD096 /* main.c in Sources */,
+				E0716DCF1FB1EFED00AAD096 /* backend.c in Sources */,
+				E0716DC61FAE6CD400AAD096 /* main.c in Sources */,
+				E0716DD21FB1EFF500AAD096 /* frontend.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -216,6 +228,7 @@
 		E0716DC41FAE67DE00AAD096 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				OTHER_LDFLAGS = "-lncurses";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -223,6 +236,7 @@
 		E0716DC51FAE67DE00AAD096 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				OTHER_LDFLAGS = "-lncurses";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
