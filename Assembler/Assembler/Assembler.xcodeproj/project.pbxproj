@@ -8,6 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		E0FE48CA201F312E00E2AE30 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = E0FE48C9201F312E00E2AE30 /* main.c */; };
+		E0FE48D2201F314D00E2AE30 /* LabelTable.c in Sources */ = {isa = PBXBuildFile; fileRef = E0FE48D0201F314D00E2AE30 /* LabelTable.c */; };
+		E0FE48D5201F3C5100E2AE30 /* getToken.c in Sources */ = {isa = PBXBuildFile; fileRef = E0FE48D3201F3C5100E2AE30 /* getToken.c */; };
+		E0FE48D8201F5B5E00E2AE30 /* pass1.c in Sources */ = {isa = PBXBuildFile; fileRef = E0FE48D6201F5B5E00E2AE30 /* pass1.c */; };
+		E0FE48DB201F6A7600E2AE30 /* binToDec.c in Sources */ = {isa = PBXBuildFile; fileRef = E0FE48D9201F6A7600E2AE30 /* binToDec.c */; };
+		E0FE48DE201F6BD600E2AE30 /* pass2.c in Sources */ = {isa = PBXBuildFile; fileRef = E0FE48DC201F6BD600E2AE30 /* pass2.c */; };
+		E0FE48E12024A05B00E2AE30 /* tester.c in Sources */ = {isa = PBXBuildFile; fileRef = E0FE48DF2024A05B00E2AE30 /* tester.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +31,18 @@
 /* Begin PBXFileReference section */
 		E0FE48C6201F312E00E2AE30 /* Assembler */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Assembler; sourceTree = BUILT_PRODUCTS_DIR; };
 		E0FE48C9201F312E00E2AE30 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		E0FE48D0201F314D00E2AE30 /* LabelTable.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = LabelTable.c; sourceTree = "<group>"; };
+		E0FE48D1201F314D00E2AE30 /* LabelTable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LabelTable.h; sourceTree = "<group>"; };
+		E0FE48D3201F3C5100E2AE30 /* getToken.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = getToken.c; sourceTree = "<group>"; };
+		E0FE48D4201F3C5100E2AE30 /* getToken.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = getToken.h; sourceTree = "<group>"; };
+		E0FE48D6201F5B5E00E2AE30 /* pass1.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pass1.c; sourceTree = "<group>"; };
+		E0FE48D7201F5B5E00E2AE30 /* pass1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pass1.h; sourceTree = "<group>"; };
+		E0FE48D9201F6A7600E2AE30 /* binToDec.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = binToDec.c; sourceTree = "<group>"; };
+		E0FE48DA201F6A7600E2AE30 /* binToDec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = binToDec.h; sourceTree = "<group>"; };
+		E0FE48DC201F6BD600E2AE30 /* pass2.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pass2.c; sourceTree = "<group>"; };
+		E0FE48DD201F6BD600E2AE30 /* pass2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pass2.h; sourceTree = "<group>"; };
+		E0FE48DF2024A05B00E2AE30 /* tester.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = tester.c; sourceTree = "<group>"; };
+		E0FE48E02024A05B00E2AE30 /* tester.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tester.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +76,18 @@
 			isa = PBXGroup;
 			children = (
 				E0FE48C9201F312E00E2AE30 /* main.c */,
+				E0FE48D0201F314D00E2AE30 /* LabelTable.c */,
+				E0FE48D3201F3C5100E2AE30 /* getToken.c */,
+				E0FE48DC201F6BD600E2AE30 /* pass2.c */,
+				E0FE48DD201F6BD600E2AE30 /* pass2.h */,
+				E0FE48D6201F5B5E00E2AE30 /* pass1.c */,
+				E0FE48D9201F6A7600E2AE30 /* binToDec.c */,
+				E0FE48DA201F6A7600E2AE30 /* binToDec.h */,
+				E0FE48D7201F5B5E00E2AE30 /* pass1.h */,
+				E0FE48D4201F3C5100E2AE30 /* getToken.h */,
+				E0FE48DF2024A05B00E2AE30 /* tester.c */,
+				E0FE48E02024A05B00E2AE30 /* tester.h */,
+				E0FE48D1201F314D00E2AE30 /* LabelTable.h */,
 			);
 			path = Assembler;
 			sourceTree = "<group>";
@@ -93,6 +123,7 @@
 				TargetAttributes = {
 					E0FE48C5201F312D00E2AE30 = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = F4W4AGL336;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -119,7 +150,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E0FE48D8201F5B5E00E2AE30 /* pass1.c in Sources */,
+				E0FE48D5201F3C5100E2AE30 /* getToken.c in Sources */,
+				E0FE48E12024A05B00E2AE30 /* tester.c in Sources */,
 				E0FE48CA201F312E00E2AE30 /* main.c in Sources */,
+				E0FE48DE201F6BD600E2AE30 /* pass2.c in Sources */,
+				E0FE48DB201F6A7600E2AE30 /* binToDec.c in Sources */,
+				E0FE48D2201F314D00E2AE30 /* LabelTable.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -216,6 +253,8 @@
 		E0FE48CE201F312E00E2AE30 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				DEVELOPMENT_TEAM = F4W4AGL336;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -223,6 +262,8 @@
 		E0FE48CF201F312E00E2AE30 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				DEVELOPMENT_TEAM = F4W4AGL336;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -246,6 +287,7 @@
 				E0FE48CF201F312E00E2AE30 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
